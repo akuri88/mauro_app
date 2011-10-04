@@ -1,9 +1,9 @@
 MauroApp::Application.routes.draw do
-  get "pages/home"
-
-  get "pages/addiction"
-
-  get "pages/results"
+  
+  match '/results',		:to => 'pages#results'
+  match '/addictions',	:to => 'pages#addictions'
+  
+  root :to => 'pages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

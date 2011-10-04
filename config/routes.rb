@@ -1,4 +1,10 @@
 MauroApp::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/addiction"
+
+  get "pages/results"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
